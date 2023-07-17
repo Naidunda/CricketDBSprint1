@@ -14,12 +14,19 @@
 
 body {
     background: #ececec;
+    height: 100%;
+    overflow-y: hidden;
 }
 
 .container {
     display: flex;
 }
 
+.main{
+    width: calc(100vw - 280px);
+}
+
+/* nav-bar */
 nav {
     position: relative;
     top: 0;
@@ -30,7 +37,7 @@ nav {
     border-right: 2px solid #D0D0D0;
     width: 280px;
     overflow: hidden;
-    box-shadow: 0 20px 35px rgba(0 ,0 ,0 ,0.1);
+
 }
 
 .logo{
@@ -77,7 +84,9 @@ nav .fas{
 .nav-list:hover{
     background: #eee;
 }
+/* Nav End */
 
+/* Dashboard */
 .main-left{
     position: relative;
     top: 48px;
@@ -175,20 +184,20 @@ td a{
     align-items: center;  
 }
 
-.float-child-one{
+.float-child-left{
     width: 66%;
     float: left;
     padding: 20px;
 }
 
-.float-child-two{
+.float-child-right{
     width: 33%;
     float: left;
     padding: 16px;
     text-align: center;
 }
 
-.float-child-two .view-more{
+.float-child-right .view-more{
     margin-left: 16px;
     margin-top: 16px;
 }
@@ -222,5 +231,209 @@ td a{
 .age-group{
     font-size: 16px;
     font-weight: 400;
-}   
+} 
+/* Dashbooard End */
+
+/* Players */
+.players-tabs{
+    overflow:hidden;
+    background-color: #FFFFFF;
+    height: 90px;
+    width: calc(100vw - 280px);
+    border-bottom:#D0D0D0 solid 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.players-tabs button{
+    float: left;
+    outline: none;
+    cursor: pointer;
+
+    margin-left: 8px;
+    margin-right: 8px;
+
+    background-color: #fff;
+
+    font-size: 24px;
+    padding: 28px;
+}
+
+
+
+.players-tabs button:hover{
+    font-weight: bold;
+    background: #eee;
+}
+
+.players-tabs button.active{
+    color:#ff5c5c;
+    border-top:#ff5c5c solid 3px;
+    font-weight: bold;
+}
+
+.tab-content-players {
+    display: none;
+    overflow:hidden;
+    overflow-y: scroll;
+    height: 675px;
+    padding-bottom: 32px;
+}
+
+.filters{
+    height: 140px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filters button{
+    height: 75px;
+    width: 250px;
+    border-radius: 10px;
+    border: 2px solid #ff5c5c;
+    color: #ff5c5c;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 10px;
+    font-weight: 500;
+}
+
+.filters i{
+    color: #ff5c5c;
+    padding: 10px;  
+}
+
+.filters .order{
+    height: 75px;
+    width: 150px;
+    background-color: #ff5c5c;
+    color: white;
+}
+
+.filters .order i{
+    color: white;
+}
+
+.filters input{
+    background-color: #eee;
+    border: rgb(85,83,85) solid 2px;
+    height: 75px;
+    width: 750px;
+    padding: 16px;
+    font-size: 20px;
+    margin: 10px;
+}
+
+
+.stats-table{
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 90%;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    text-align: center;
+}
+
+.stats-table td, .stats-table th{
+    border-left:#D0D0D0 solid 1px;
+    border-right:#D0D0D0 solid 1px;
+}
+
+.stats-table tr{
+    height: 28px;
+}
+
+.stats-table tr:nth-child(odd){
+    background-color: #fff;
+}
+.stats-table tr:nth-child(even){
+    background-color: #eee;
+}
+
+.stats-table td:first-child{
+    text-align: left;
+    padding-left: 16px;
+    width: 25%;
+}
+
+.stats-table th{
+    background-color: #ff5c5c;
+    color: #fff;
+}
+
+/*Player Profile*/
+.tab-content{
+    display: none;
+    overflow:hidden;
+    overflow-y: scroll;
+    padding-bottom: 32px;
+}
+
+.profile-header{
+    height: 150px;
+    width: calc(100% - 128px);
+    margin-left: 64px;
+    margin-right: 64px;
+    margin-top: 48px;
+    background-color: #fff;
+    padding: 32px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.profile-header button{
+    background-color: #fff;
+    cursor: pointer;
+    float: left;
+    height: 40px;
+    font-size: 24px;
+}
+
+.profile-header h1{
+    font-size: 40px;
+}
+
+.profile-header h2{
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.tabs{
+    overflow:hidden;
+    height: 90px;
+    width: calc(100vw - 280px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.tabs button{
+    background-color: #ececec;
+    float: left;
+    outline: none;
+    cursor: pointer;
+    margin-left: 8px;
+    margin-right: 8px;
+    font-size: 24px;
+    padding: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+
+.tabs button:hover{
+    font-weight: bold;
+    background: #eee;
+}
+
+.tabs button.active{
+    color:#ff5c5c;
+    border-bottom:#ff5c5c solid 3px;
+    font-weight: bold;
+}
 
