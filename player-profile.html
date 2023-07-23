@@ -4,9 +4,13 @@
 <head>
   <meta charset="UTF-8" />
   <title>CricketDB | Player Profile</title>
-  <link rel="stylesheet" href="/css/styles.css" />
+
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/nav-bar.css" />
+  <link rel="stylesheet" href="/css/player-profile.css" />
+
   <script src="https://kit.fontawesome.com/1374555d03.js" crossorigin="anonymous"></script>
-  <script src="/scripts/player-profile.js"></script> 
+  <script src="/scripts/player-profile.js"></script>
 </head>
 
 <body>
@@ -24,7 +28,7 @@
             <span class="nav-item">Dashboard</span>
           </a>
         </li>
-        <li class = "selected">
+        <li class="selected">
           <a href="players.html" class="nav-list">
             <i class="fas fa-solid fa-person-running"></i>
             <span class="nav-item">Players</span>
@@ -50,39 +54,271 @@
         </li>
       </ul>
     </nav>
-    <section class = "main">
+    <section class="main">
+      <div class="profile-heading">
+        <h1><button onclick="history.back()" class="btn-back"><i class="fa-solid fa-arrow-left-long"></i></button>Player
+          Name</h1>
+        <h2>Wellington, New Zealand</h2>
+      </div>
+      <!--Tab Links-->
+      <div class="tabs">
+        <button class="tab-links active" onclick="openTab(event, 'Teams')">Teams</button>
+        <button class="tab-links" onclick="openTab(event, 'Statistics')">Statistics</button>
+        <button class="tab-links" onclick="openTab(event, 'Matches')">Matches</button>
+      </div>
+      <!--Tab Content-->
+      <div id="Teams" class="tab-content" style="display: block">
+        <div class="tbl-team align-left">
+          <div class="float-child-left">
+            <h2><span class="team-name">Generic Team Name</span><br><span class="age-group">Age Group</span><br><span
+                class="location">Wellington, New Zealand</span></h2>
+          </div>
+          <div class="float-child-right">
+            <button type="button" class="btn-view-team">View Team</button>
+          </div>
+        </div>
+        <div class="tbl-team align-right">
+          <div class="float-child-left">
+            <h2><span class="team-name">Generic Team Name</span><br><span class="age-group">Age Group</span><br><span
+                class="location">Wellington, New Zealand</span></h2>
+          </div>
+          <div class="float-child-right">
+            <button type="button" class="btn-view-team">View Team</button>
+          </div>
+        </div>
+        <div class="tbl-team align-left">
+          <div class="float-child-left">
+            <h2><span class="team-name">Generic Team Name</span><br><span class="age-group">Age Group</span><br><span
+                class="location">Wellington, New Zealand</span></h2>
+          </div>
+          <div class="float-child-right">
+            <button type="button" class="btn-view-team">View Team</button>
+          </div>
+        </div>
+        <div class="tbl-team align-right">
+          <div class="float-child-left">
+            <h2><span class="team-name">Generic Team Name</span><br><span class="age-group">Age Group</span><br><span
+                class="location">Wellington, New Zealand</span></h2>
+          </div>
+          <div class="float-child-right">
+            <button type="button" class="btn-view-team">View Team</button>
+          </div>
+        </div>
+        <div class="tbl-team align-left">
+          <div class="float-child-left">
+            <h2><span class="team-name">Generic Team Name</span><br><span class="age-group">Age Group</span><br><span
+                class="location">Wellington, New Zealand</span></h2>
+          </div>
+          <div class="float-child-right">
+            <button type="button" class="btn-view-team">View Team</button>
+          </div>
+        </div>
+        <div class="tbl-team align-right">
+          <div class="float-child-left">
+            <h2><span class="team-name">Generic Team Name</span><br><span class="age-group">Age Group</span><br><span
+                class="location">Wellington, New Zealand</span></h2>
+          </div>
+          <div class="float-child-right">
+            <button type="button" class="btn-view-team">View Team</button>
+          </div>
+        </div>
+        <div class="tbl-team align-left">
+          <div class="float-child-left">
+            <h2><span class="team-name">Generic Team Name</span><br><span class="age-group">Age Group</span><br><span
+                class="location">Wellington, New Zealand</span></h2>
+          </div>
+          <div class="float-child-right">
+            <button type="button" class="btn-view-team">View Team</button>
+          </div>
+        </div>
+        <div class="tbl-team align-right">
+          <div class="float-child-left">
+            <h2><span class="team-name">Generic Team Name</span><br><span class="age-group">Age Group</span><br><span
+                class="location">Wellington, New Zealand</span></h2>
+          </div>
+          <div class="float-child-right">
+            <button type="button" class="btn-view-team">View Team</button>
+          </div>
+        </div>
+        <div class="tbl-team align-left">
+          <div class="float-child-left">
+            <h2><span class="team-name">Generic Team Name</span><br><span class="age-group">Age Group</span><br><span
+                class="location">Wellington, New Zealand</span></h2>
+          </div>
+          <div class="float-child-right">
+            <button type="button" class="btn-view-team">View Team</button>
+          </div>
+        </div>
+      </div>
+      <div id="Statistics" class="tab-content">
+        <div class="select-menu">
+          <div class="select-btn" onclick="selectionMenu(event)">
+            <span class="sBtn-text">Select your option</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
 
-        <div class = "profile-header">
-          <h1><button onclick = "history.back()" class = "back-button"><i class="fa-solid fa-arrow-left-long"></i></button>Player Name</h1>
-          <h2>Wellington, New Zealand</h2>
+          <ul class="options">
+            <li class="option">
+              <span class="option-text">All-Time</span>
+            </li>
+            <li class="option">
+              <span class="option-text">2023</span>
+            </li>
+            <li class="option">
+              <span class="option-text">2022</span>
+            </li>
+            <li class="option">
+              <span class="option-text">2021</span>
+            </li>
+            <li class="option">
+              <span class="option-text">2020</span>
+            </li>
+          </ul>
         </div>
 
-        <!--Tab Links-->
-        <div class="tabs">
-            <button class="tab-links active" onclick="openTab(event, 'Teams')">Teams</button>
-            <button class="tab-links" onclick="openTab(event, 'Statistics')">Statistics</button>
-            <button class="tab-links" onclick="openTab(event, 'Matches')">Matches</button>
+        <div>
+          <h2>Batting & Fielding</h2>
+          <table>
+            <tr>
+              <th>Matches</th>
+              <th>Inn</th>
+              <th>NO</th>
+              <th>HS</th>
+              <th>Avg</th>
+              <th>SR</th>
+              <th>50s</th>
+              <th>100s</th>
+              <th>4s</th>
+              <th>6s</th>
+              <th>Ct</th>
+              <th>St</th>
+            </tr>
+            <tr>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+          </table>
+
+          <h2>Bowling</h2>
+          <table>
+            <tr>
+              <th>Matches</th>
+              <th>Inn</th>
+              <th>Balls</th>
+              <th>Wkts</th>
+              <th>Runs</th>
+              <th>BBI</th>
+              <th>Ave</th>
+              <th>Econ</th>
+              <th>SR</th>
+              <th>5W</th>
+            </tr>
+            <tr>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+          </table>
         </div>
 
-        <!--Tab Content-->
-        <div id="Teams" class="tab-content" style="display: block">
-            <div class="filters">
-                <button><i class="fa-solid fa-sort"></i>Sort By</button>
-                <button class="order"><i class="fa-solid fa-arrow-down-a-z"></i></button>
-                <button><i class="fa-solid fa-filter"></i>Filter</button>
-                <input type="text" placeholder="Search..">
+
+      </div>
+      <div id="Matches" class="tab-content">
+        <div class="tbl-matches">
+          <div class="float-container">
+            <div class="float-child-left">
+              <h2>01/01/23</h2>
+              <div class="float-container">
+                <div class="float-child">
+                  <p>
+                    <span class="team-name">Team Name 1</span><br /><span class="age-group">Age Group</span><br /><span
+                      class="score">100 / 10 (20.0 ov)</span>
+                  </p>
+                </div>
+                <div class="float-child">
+                  <p>
+                    <span class="team-name">Team Name 2</span><br /><span class="age-group">Age Group</span><br /><span
+                      class="score">100 / 10 (20.0 ov)</span>
+                  </p>
+                </div>
+              </div>
             </div>
+            <div class="float-child-right">
+              <button class="btn-view-match" type="button">View Match</button>
+            </div>
+          </div>
+          <p class="result">Team Name 1 won by 2 wickets.</p>
         </div>
-
-        <div id="Statistics" class="tab-content">
-            <p>2</p>
+        <div class="tbl-matches">
+          <div class="float-container">
+            <div class="float-child-left">
+              <h2>01/01/23</h2>
+              <div class="float-container">
+                <div class="float-child">
+                  <p>
+                    <span class="team-name">Team Name 1</span><br /><span class="age-group">Age Group</span><br /><span
+                      class="score">100 / 10 (20.0 ov)</span>
+                  </p>
+                </div>
+                <div class="float-child">
+                  <p>
+                    <span class="team-name">Team Name 2</span><br /><span class="age-group">Age Group</span><br /><span
+                      class="score">100 / 10 (20.0 ov)</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="float-child-right">
+              <button class="btn-view-match" type="button">View Match</button>
+            </div>
+          </div>
+          <p class="result">Team Name 1 won by 2 wickets.</p>
         </div>
-
-        <div id="Matches" class="tab-content">
-            <p>3</p>
+        <div class="tbl-matches">
+          <div class="float-container">
+            <div class="float-child-left">
+              <h2>01/01/23</h2>
+              <div class="float-container">
+                <div class="float-child">
+                  <p>
+                    <span class="team-name">Team Name 1</span><br /><span class="age-group">Age Group</span><br /><span
+                      class="score">100 / 10 (20.0 ov)</span>
+                  </p>
+                </div>
+                <div class="float-child">
+                  <p>
+                    <span class="team-name">Team Name 2</span><br /><span class="age-group">Age Group</span><br /><span
+                      class="score">100 / 10 (20.0 ov)</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="float-child-right">
+              <button class="btn-view-match" type="button">View Match</button>
+            </div>
+          </div>
+          <p class="result">Team Name 1 won by 2 wickets.</p>
         </div>
-
+      </div>
     </section>
   </div>
 </body>
+
 </html>

@@ -4,7 +4,11 @@
 <head>
   <meta charset="UTF-8" />
   <title>CricketDB | Players</title>
-  <link rel="stylesheet" href="/css/styles.css" />
+
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/nav-bar.css" />
+  <link rel="stylesheet" href="/css/players.css" />
+  
   <script src="https://kit.fontawesome.com/1374555d03.js" crossorigin="anonymous"></script>
   <script src="/scripts/players.js"></script>
 </head>
@@ -52,22 +56,22 @@
     </nav>
     <section class="main">
       <!--Tab Links-->
-      <div class="players-tabs">
-        <button class="tab-links-players active" onclick="openTab(event, 'All')">All</button>
-        <button class="tab-links-players" onclick="openTab(event, 'In-Form')">In-Form</button>
-        <button class="tab-links-players" onclick="openTab(event, 'Batsmen')">Batsmen</button>
-        <button class="tab-links-players" onclick="openTab(event, 'Bowlers')">Bowlers</button>
-        <button class="tab-links-players" onclick="openTab(event, 'Fielders')">Fielders</button>
+      <div class = "tabs">
+        <button class="tab-links active" onclick="openTab(event, 'All')">All</button>
+        <button class="tab-links" onclick="openTab(event, 'In-Form')">In-Form</button>
+        <button class="tab-links" onclick="openTab(event, 'Batsmen')">Batsmen</button>
+        <button class="tab-links" onclick="openTab(event, 'Bowlers')">Bowlers</button>
+        <button class="tab-links" onclick="openTab(event, 'Fielders')">Fielders</button>
       </div>
       <div class="filters">
-        <button><i class="fa-solid fa-sort"></i>Sort By</button>
-        <button class="order"><i class="fa-solid fa-arrow-down-a-z"></i></button>
-        <button><i class="fa-solid fa-filter"></i>Filter</button>
+        <button type = "button"><i class="fa-solid fa-sort"></i>Sort By</button>
+        <button type = "button" class="order"><i class="fa-solid fa-arrow-down-a-z"></i></button>
+        <button type = "button"><i class="fa-solid fa-filter"></i>Filter</button>
         <input type="text" placeholder="Search..">
       </div>
       <!--Tab Content-->
-      <div id="All" class="tab-content-players" style="display: block">
-        <table class="stats-table">
+      <div id="All" class="tab-content" style="display: block">
+        <table class="tbl-statistics">
           <tr>
             <th>Name</th>
             <th>Matches</th>
@@ -448,15 +452,15 @@
           </tr>
         </table>
       </div>
-      <div id="In-Form" class="tab-content-players">
-        <table class="stats-table">
+      <div id="In-Form" class="tab-content">
+        <table class="tbl-statistics">
           <tr>
             <th>Name</th>
           </tr>
         </table>
       </div>
-      <div id="Batsmen" class="tab-content-players">
-        <table class="stats-table">
+      <div id="Batsmen" class="tab-content">
+        <table class="tbl-statistics">
           <tr>
             <th>Name</th>
             <th>Matches</th>
@@ -890,8 +894,8 @@
 
         </table>
       </div>
-      <div id="Bowlers" class="tab-content-players">
-        <table class="stats-table">
+      <div id="Bowlers" class="tab-content">
+        <table class="tbl-statistics">
           <tr>
             <th>Name</th>
             <th>Matches</th>
@@ -1219,8 +1223,8 @@
           </tr>
         </table>
       </div>
-      <div id="Fielders" class="tab-content-players">
-        <table class="stats-table">
+      <div id="Fielders" class="tab-content">
+        <table class="tbl-statistics">
           <tr>
             <th>Name</th>
             <th>Matches</th>
