@@ -42,7 +42,6 @@
 .tabs {
     overflow: hidden;
     height: 90px;
-    width: calc(100vw - 280px);
     display: flex;
     align-items: center;
     justify-content: center;
