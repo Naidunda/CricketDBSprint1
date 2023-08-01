@@ -6,8 +6,10 @@
 
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/nav-bar.css" />
+    <link rel="stylesheet" href="/css/teams.css" />
     
     <script src = "https://kit.fontawesome.com/1374555d03.js" crossorigin="anonymous" ></script>
+    <script src="/scripts/teams.js"></script>
   </head>
   <body>
     <div class="container">
@@ -50,6 +52,170 @@
           </li>
         </ul>
       </nav>
+      <section class="main">
+        <!--Tab Links-->
+        <div class="tabs">
+          <button class="tab-links active" onclick="openTab(event, 'All')">All</button>
+          <button class="tab-links" onclick="openTab(event, 'Schools')">School</button>
+          <button class="tab-links" onclick="openTab(event, 'Clubs')">Clubs</button>
+        </div>
+      <div class="filters">
+        <button type="button"><i class="fa-solid fa-sort"></i>Sort By</button>
+        <button type="button" class="order"><i class="fa-solid fa-arrow-down-a-z"></i></button>
+        <button type="button"><i class="fa-solid fa-filter"></i>Filter</button>
+        <input type="text" placeholder="Search..">
+      </div>
+        <!--Tab Content-->
+        <div id="All" class="tab-content" style="display: block">
+          <div class="tbl-team align-left">
+            <div class="float-child-left">
+              <h2><span class="team-name">Generic Team Name</span><br><span class="age-group">Age Group</span><br><span
+                  class="location">Wellington, New Zealand</span></h2>
+            </div>
+            <div class="float-child-right">
+              <button type="button" class="btn-view-team">View Team</button>
+            </div>
+          </div>
+          <div class="tbl-team align-right">
+            <div class="float-child-left">
+              <h2><span class="team-name">Generic Team Name</span><br><span class="age-group">Age Group</span><br><span
+                  class="location">Wellington, New Zealand</span></h2>
+            </div>
+            <div class="float-child-right">
+              <button type="button" class="btn-view-team">View Team</button>
+            </div>
+          </div>
+        </div>
+        <div id="Schools" class="tab-content">
+          <div class="tbl-team align-left">
+            <div class="float-child-left">
+              <h2><span class="team-name">Generic Team Name</span><br><span class="age-group">Age Group</span><br><span
+                  class="location">Wellington, New Zealand</span></h2>
+            </div>
+            <div class="float-child-right">
+              <button type="button" class="btn-view-team">View Team</button>
+            </div>
+          </div>
+          <div class="tbl-team align-right">
+            <div class="float-child-left">
+              <h2><span class="team-name">Generic Team Name</span><br><span class="age-group">Age Group</span><br><span
+                  class="location">Wellington, New Zealand</span></h2>
+            </div>
+            <div class="float-child-right">
+              <button type="button" class="btn-view-team">View Team</button>
+            </div>
+          </div>
+          <div class="tbl-team align-left">
+            <div class="float-child-left">
+              <h2><span class="team-name">Generic Team Name</span><br><span class="age-group">Age Group</span><br><span
+                  class="location">Wellington, New Zealand</span></h2>
+            </div>
+            <div class="float-child-right">
+              <button type="button" class="btn-view-team">View Team</button>
+            </div>
+          </div>
+          <div class="tbl-team align-right">
+            <div class="float-child-left">
+              <h2><span class="team-name">Generic Team Name</span><br><span class="age-group">Age Group</span><br><span
+                  class="location">Wellington, New Zealand</span></h2>
+            </div>
+            <div class="float-child-right">
+              <button type="button" class="btn-view-team">View Team</button>
+            </div>
+          </div>
+        </div>
+        <div id="Clubs" class="tab-content">
+          <div class="tbl-team align-left">
+            <div class="float-child-left">
+              <h2><span class="team-name">Generic Team Name</span><br><span class="age-group">Age Group</span><br><span
+                  class="location">Wellington, New Zealand</span></h2>
+            </div>
+            <div class="float-child-right">
+              <button type="button" class="btn-view-team">View Team</button>
+            </div>
+          </div>
+          <div class="tbl-team align-right">
+            <div class="float-child-left">
+              <h2><span class="team-name">Generic Team Name</span><br><span class="age-group">Age Group</span><br><span
+                  class="location">Wellington, New Zealand</span></h2>
+            </div>
+            <div class="float-child-right">
+              <button type="button" class="btn-view-team">View Team</button>
+            </div>
+          </div>
+          <div class="tbl-team align-left">
+            <div class="float-child-left">
+              <h2><span class="team-name">Generic Team Name</span><br><span class="age-group">Age Group</span><br><span
+                  class="location">Wellington, New Zealand</span></h2>
+            </div>
+            <div class="float-child-right">
+              <button type="button" class="btn-view-team">View Team</button>
+            </div>
+          </div>
+          <div class="tbl-team align-right">
+            <div class="float-child-left">
+              <h2><span class="team-name">Generic Team Name</span><br><span class="age-group">Age Group</span><br><span
+                  class="location">Wellington, New Zealand</span></h2>
+            </div>
+            <div class="float-child-right">
+              <button type="button" class="btn-view-team">View Team</button>
+            </div>
+          </div>
+          <div class="tbl-team align-left">
+            <div class="float-child-left">
+              <h2><span class="team-name">Generic Team Name</span><br><span class="age-group">Age Group</span><br><span
+                  class="location">Wellington, New Zealand</span></h2>
+            </div>
+            <div class="float-child-right">
+              <button type="button" class="btn-view-team">View Team</button>
+            </div>
+          </div>
+          <div class="tbl-team align-right">
+            <div class="float-child-left">
+              <h2><span class="team-name">Generic Team Name</span><br><span class="age-group">Age Group</span><br><span
+                  class="location">Wellington, New Zealand</span></h2>
+            </div>
+            <div class="float-child-right">
+              <button type="button" class="btn-view-team">View Team</button>
+            </div>
+          </div>
+          <div class="tbl-team align-left">
+            <div class="float-child-left">
+              <h2><span class="team-name">Generic Team Name</span><br><span class="age-group">Age Group</span><br><span
+                  class="location">Wellington, New Zealand</span></h2>
+            </div>
+            <div class="float-child-right">
+              <button type="button" class="btn-view-team">View Team</button>
+            </div>
+          </div>
+          <div class="tbl-team align-right">
+            <div class="float-child-left">
+              <h2><span class="team-name">Generic Team Name</span><br><span class="age-group">Age Group</span><br><span
+                  class="location">Wellington, New Zealand</span></h2>
+            </div>
+            <div class="float-child-right">
+              <button type="button" class="btn-view-team">View Team</button>
+            </div>
+          </div>
+          <div class="tbl-team align-left">
+            <div class="float-child-left">
+              <h2><span class="team-name">Generic Team Name</span><br><span class="age-group">Age Group</span><br><span
+                  class="location">Wellington, New Zealand</span></h2>
+            </div>
+            <div class="float-child-right">
+              <button type="button" class="btn-view-team">View Team</button>
+            </div>
+          </div>
+          <div class="tbl-team align-right">
+            <div class="float-child-left">
+              <h2><span class="team-name">Generic Team Name</span><br><span class="age-group">Age Group</span><br><span
+                  class="location">Wellington, New Zealand</span></h2>
+            </div>
+            <div class="float-child-right">
+              <button type="button" class="btn-view-team">View Team</button>
+            </div>
+          </div>
+        </div>
     </div>
   </body>
 </html>
