@@ -17,21 +17,21 @@ function openTab(evt, tabName) {
   // Show the current tab, and add an "active" class to the button that opened the tab
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " active";
-}  
+}
 
-function selectionMenu(evt){
+function selectionMenu(evt) {
   const optionMenu = document.querySelector(".select-menu"),
-       selectBtn = optionMenu.querySelector(".select-btn"),
-       options = optionMenu.querySelectorAll(".option"),
-       sBtn_text = optionMenu.querySelector(".sBtn-text");
+    selectBtn = optionMenu.querySelector(".select-btn"),
+    options = optionMenu.querySelectorAll(".option"),
+    sBtn_text = optionMenu.querySelector(".sBtn-text");
 
-  optionMenu.classList.toggle("active");       
+  optionMenu.classList.toggle("active");
 
-  options.forEach(option =>{
-    option.addEventListener("click", ()=>{
+  options.forEach((option) => {
+    option.addEventListener("click", () => {
       let selectedOption = option.querySelector(".option-text").innerText;
-        sBtn_text.innerText = selectedOption;
-        optionMenu.classList.remove("active");
-    })
-  })  
+      sBtn_text.innerText = selectedOption;
+      optionMenu.classList.remove("active");
+    });
+  });
 }
