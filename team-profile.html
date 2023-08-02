@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CricketDB | Team Profile</title>
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/nav-bar.css" />
+    <link rel="stylesheet" href="/css/team-profile.css" />
+
+    <script
+      src="https://kit.fontawesome.com/1374555d03.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/scripts/team-profile.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html" class="logo">
+              <span class="nav-item">CricketDB</span>
+            </a>
+          </li>
+          <li>
+            <a href="index.html" class="nav-list">
+              <i class="fas fa-solid fa-table-columns"></i>
+              <span class="nav-item">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="players.html" class="nav-list">
+              <i class="fas fa-solid fa-person-running"></i>
+              <span class="nav-item">Players</span>
+            </a>
+          </li>
+          <li class="selected">
+            <a href="teams.html" class="nav-list">
+              <i class="fas fa-solid fa-people-group"></i>
+              <span class="nav-item">Teams</span>
+            </a>
+          </li>
+          <li>
+            <a href="matches.html" class="nav-list">
+              <i class="fas fa-solid fa-calendar-days"></i>
+              <span class="nav-item">Matches</span>
+            </a>
+          </li>
+          <li>
+            <a href="management.html" class="nav-list">
+              <i class="fas fa-solid fa-chart-line"></i>
+              <span class="nav-item">Management</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <section class="main">
+        <div class="profile-heading">
+          <h1>
+            <button onclick="history.back()" class="btn-back">
+              <i class="fa-solid fa-arrow-left-long"></i></button
+            >Generic Team Name
+          </h1>
+          <h2>Age Group</h2>
+          <h2>Wellington, New Zealand</h2>
+        </div>
+        <!--Tab Links-->
+        <div class="tabs">
+          <button class="tab-links active" onclick="openTab(event, 'Players')">
+            Players
+          </button>
+          <button class="tab-links" onclick="openTab(event, 'Statistics')">
+            Statistics
+          </button>
+          <button class="tab-links" onclick="openTab(event, 'Matches')">
+            Matches
+          </button>
+        </div>
+        <!--Tab Content-->
+        <div id="Players" class="tab-content" style="display: block">
+        
+        </div>
+        <div id="Statistics" class="tab-content">
+            <div class="select-menu">
+                <div class="select-btn" onclick="selectionMenu(event)">
+                  <span class="sBtn-text">Select your option</span>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+      
+                <ul class="options">
+                  <li class="option">
+                    <span class="option-text">All</span>
+                  </li>
+                  <li class="option">
+                    <span class="option-text">Batting</span>
+                  </li>
+                  <li class="option">
+                    <span class="option-text">Bowling</span>
+                  </li>
+                  <li class="option">
+                    <span class="option-text">Fielding</span>
+                  </li>
+                </ul>
+            </div>
+        </div>
+        <div id="Matches" class="tab-content">
+          <div class="tbl-matches">
+            <div class="float-container">
+              <div class="float-child-left">
+                <h2>01/01/23</h2>
+                <div class="float-container">
+                  <div class="float-child">
+                    <p>
+                      <span class="team-name">Team Name 1</span><br /><span
+                        class="age-group"
+                        >Age Group</span
+                      ><br /><span class="score">100 / 10 (20.0 ov)</span>
+                    </p>
+                  </div>
+                  <div class="float-child">
+                    <p>
+                      <span class="team-name">Team Name 2</span><br /><span
+                        class="age-group"
+                        >Age Group</span
+                      ><br /><span class="score">100 / 10 (20.0 ov)</span>
+                    </p>
+                  </div>
+                </div>
+                <p class="result">Team Name 1 won by 2 wickets.</p>
+              </div>
+              <div class="float-child-right">
+                <button class="btn-view-match" type="button">View Match</button>
+              </div>
+            </div>
+          </div>
+          <div class="tbl-matches">
+            <div class="float-container">
+              <div class="float-child-left">
+                <h2>01/01/23</h2>
+                <div class="float-container">
+                  <div class="float-child">
+                    <p>
+                      <span class="team-name">Team Name 1</span><br /><span
+                        class="age-group"
+                        >Age Group</span
+                      ><br /><span class="score">100 / 10 (20.0 ov)</span>
+                    </p>
+                  </div>
+                  <div class="float-child">
+                    <p>
+                      <span class="team-name">Team Name 2</span><br /><span
+                        class="age-group"
+                        >Age Group</span
+                      ><br /><span class="score">100 / 10 (20.0 ov)</span>
+                    </p>
+                  </div>
+                </div>
+                <p class="result">Team Name 1 won by 2 wickets.</p>
+              </div>
+              <div class="float-child-right">
+                <button class="btn-view-match" type="button">View Match</button>
+              </div>
+            </div>
+          </div>
+          <div class="tbl-matches">
+            <div class="float-container">
+              <div class="float-child-left">
+                <h2>01/01/23</h2>
+                <div class="float-container">
+                  <div class="float-child">
+                    <p>
+                      <span class="team-name">Team Name 1</span><br /><span
+                        class="age-group"
+                        >Age Group</span
+                      ><br /><span class="score">100 / 10 (20.0 ov)</span>
+                    </p>
+                  </div>
+                  <div class="float-child">
+                    <p>
+                      <span class="team-name">Team Name 2</span><br /><span
+                        class="age-group"
+                        >Age Group</span
+                      ><br /><span class="score">100 / 10 (20.0 ov)</span>
+                    </p>
+                  </div>
+                </div>
+                <p class="result">Team Name 1 won by 2 wickets.</p>
+              </div>
+              <div class="float-child-right">
+                <button class="btn-view-match" type="button">View Match</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
