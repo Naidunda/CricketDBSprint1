@@ -149,7 +149,7 @@
 .tbl-matches {
   background: white;
   width: calc(100% - 128px);
-  height: 220px;
+  height: auto;
   border-radius: 20px;
   padding: 32px;
   margin-left: 64px;
@@ -190,7 +190,7 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  height: 150px;
+
 }
 
 .tbl-matches .float-child p {
@@ -329,4 +329,12 @@ tr {
 th {
   background-color: #ff5c5c;
   color: #fff;
+}
+
+tr:first-child {
+  border-top: #d0d0d0 solid 1px;
+}
+
+tr:last-child {
+  border-bottom: #d0d0d0 solid 1px;
 }
