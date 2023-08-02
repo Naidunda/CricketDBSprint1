@@ -57,12 +57,24 @@
   height: 75px;
   width: 250px;
   border-radius: 10px;
+  background-color: #fff;
   border: 2px solid #ff5c5c;
   color: #ff5c5c;
   cursor: pointer;
   font-size: 18px;
   margin: 10px;
   font-weight: 500;
+
+}
+  
+.filters button:hover {
+  color: #ffffff;
+  background-color: #ff5c5c;
+
+}
+
+.filters button:hover i{ 
+  color: #fff;
 }
 
 .filters i {

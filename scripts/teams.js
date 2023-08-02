@@ -23,3 +23,14 @@ function openTab(evt, tabName) {
 function openTeamProfile() {
   window.location.href='team-profile.html';
 }
+
+function sortBy(){
+
+  if  ( document.getElementById("SortBy").classList.contains('fa-arrow-down-a-z') ){
+    document.getElementById("SortBy").classList.add('fa-arrow-down-z-a');
+    document.getElementById("SortBy").classList.remove('fa-arrow-down-a-z');
+  } else {
+    document.getElementById("SortBy").classList.add('fa-arrow-down-a-z');
+    document.getElementById("SortBy").classList.remove('fa-arrow-down-z-a');
+  }
+}
