@@ -35,3 +35,7 @@ function selectionMenu(evt) {
     });
   });
 }
+
+function openTeamProfile() {
+  window.location.href='team-profile.html';
+}
