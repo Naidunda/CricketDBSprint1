@@ -13,7 +13,7 @@
 }
 
 .profile-heading {
-  height: 170px;
+  height: 180px;
   width: 100%;
   background-color: #fff;
   padding: 32px;
@@ -191,6 +191,60 @@
   font-size: 18px;
   color: #333;
 }
+
+.statistics-content{
+  display: none;
+  padding-top: 18px;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  text-align: center;
+}
+
+td,
+th {
+  border-left: #d0d0d0 solid 1px;
+  border-right: #d0d0d0 solid 1px;
+
+}
+
+tr:first-child {
+  border-top: #d0d0d0 solid 1px;
+}
+
+tr:last-child {
+  border-bottom: #d0d0d0 solid 1px;
+}
+
+tr {
+  height: 28px;
+  background-color: #fff;
+}
+
+th {
+  background-color: #ff5c5c;
+  color: #fff;
+}
+
+tr:nth-child(odd) {
+  background-color: #eee;
+}
+
+tr:nth-child(even) {
+  background-color: #fff;
+}
+
+td:first-child {
+  text-align: left;
+  padding-left: 16px;
+  width: 25%;
+}
+
 
 .tbl-matches {
   background: white;
