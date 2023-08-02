@@ -26,11 +26,19 @@ function selectionMenu(evt) {
       sBtn_text = optionMenu.querySelector(".sBtn-text");
   
     optionMenu.classList.toggle("active");
+
   
     options.forEach((option) => {
       option.addEventListener("click", () => {
+
+        tabcontent = document.getElementsByClassName("statistics-content");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+
         let selectedOption = option.querySelector(".option-text").innerText;
         sBtn_text.innerText = selectedOption;
+        document.getElementById(selectedOption).style.display = "block";
         optionMenu.classList.remove("active");
       });
     });
